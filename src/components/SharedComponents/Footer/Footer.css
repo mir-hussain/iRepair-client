@@ -1,0 +1,88 @@
+footer {
+  height: 90vh;
+  width: 100%;
+  background: linear-gradient(#fff, rgba(255, 255, 255, 0)), linear-gradient(-90deg, #fff, #fff, rgba(255, 255, 255, 0)), url(../../../image/footer-bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.footer-left-content {
+  height: 100%;
+  width: 50%;
+  padding: 3rem 5rem;
+}
+
+.footer-left-content > p {
+  margin-bottom: 1.5rem;
+  color: var(--off-black);
+}
+
+.footer-logo {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--off-black);
+}
+
+.footer-logo > small {
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+
+#call-us {
+  color: var(--gray);
+}
+
+#call-us > span {
+  font-size: 2.5rem;
+  color: var(--off-black);
+}
+
+.cell-number {
+  font-size: 2.5rem;
+  color: var(--off-black);
+  margin-bottom: 1rem;
+}
+
+.footer-social-icons {
+  margin-bottom: 10rem;
+  margin-top: 2rem;
+}
+
+.social-icon {
+  font-size: 2rem;
+  margin-right: 2rem;
+  color: var(--off-black);
+}
+
+.footer-right-content {
+  height: 100%;
+  width: 50%;
+  padding-top: 3.5rem;
+  padding-right: 5rem;
+}
+
+.footer-right-content > h1 {
+  color: var(--off-black);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-right-content > p {
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+
+.footer-link-container {
+  display: flex;
+}
+
+.footer-link-container > div {
+  margin-right: 2rem;
+}
+
+.footer-link-container > div > ul > li {
+  margin-bottom: 0.5rem;
+}

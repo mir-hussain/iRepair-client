@@ -1,0 +1,38 @@
+nav {
+  height: 4rem;
+  background-color: #fff;
+  opacity: 0.9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+nav > ul {
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav > ul > li {
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: var(--off-black);
+}
+
+#logo {
+  font-size: 2em;
+  margin-right: auto;
+  color: var(--off-black);
+}
