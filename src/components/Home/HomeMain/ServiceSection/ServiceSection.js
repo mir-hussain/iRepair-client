@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./ServiceSection.css";
-import serviceData from "./ServiceData";
+import axios from "axios";
 
 const ServiceSection = () => {
+  const [services, setServices] = useState([]);
+  console.log(services);
+  useEffect(() => {
+    axios.get("http://localhost:5000/services").then((res) => setServices(res.data));
+  }, []);
   return (
     <section className='service-section'>
       <div className='service-section-title'>
@@ -14,8 +19,8 @@ const ServiceSection = () => {
         </p>
       </div>
       <div className='service-cards-container'>
-        {serviceData.map((data) => (
-          <Card key={data.image} data={data} />
+        {services.map((service) => (
+          <Card key={service.key} service={service} />
         ))}
       </div>
       <button className='primary-btn service-section-btn'>More </button>
@@ -23,15 +28,15 @@ const ServiceSection = () => {
   );
 };
 
-const Card = ({ data }) => {
-  const { title, description, price, image } = data;
+const Card = ({ service }) => {
+  const { name, description, price, imageURL } = service;
   return (
     <div className='service-card'>
       <div className='service-card-image'>
-        <img src={image} alt='' />
+        <img src={imageURL} alt='' />
       </div>
       <div className='service-card-text'>
-        <h1>{title}</h1>
+        <h1>{name}</h1>
         <p>{description}</p>
         <p className='text-cyan'>Price: {price} Tk.</p>
       </div>

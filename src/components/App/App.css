@@ -14,6 +14,7 @@
   --light-cyan: #00e0b0;
   --off-black: #1d1d1f;
   --gray: #9b9999;
+  --light-gray: #c4c3c3;
   --bg-clr: #f3f3f3;
 
   --br-small: 5px;
@@ -39,4 +40,39 @@
   background-color: var(--light-cyan);
   color: var(--off-black);
   border-radius: var(--br-small);
+}
+
+.primary-btn:disabled,
+.primary-btn[disabled] {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  background-color: var(--gray);
+  color: var(--off-black);
+  border-radius: var(--br-small);
+}
+
+.table-header,
+.table-body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.table-header,
+.table-body {
+  height: 4rem;
+}
+
+.table-header {
+  background-color: var(--bg-clr);
+  color: var(--off-black);
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+}
+
+.table-body {
+  border-bottom: 1px solid var(--bg-clr);
+  color: var(--off-black);
 }

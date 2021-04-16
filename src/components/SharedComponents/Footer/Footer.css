@@ -86,3 +86,38 @@ footer {
 .footer-link-container > div > ul > li {
   margin-bottom: 0.5rem;
 }
+
+.footer-input {
+  margin: 2.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer-input > input {
+  height: 60px;
+  width: 400px;
+  border: 1px solid var(--gray);
+  outline: none;
+  padding-left: 30px;
+  font-size: 1.1rem;
+  -webkit-border-top-left-radius: 50px;
+  -webkit-border-bottom-left-radius: 50px;
+  -moz-border-radius-topleft: 50px;
+  -moz-border-radius-bottomleft: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.footer-input > button {
+  height: 60px;
+  width: 100px;
+  border: 1px solid var(--gray);
+  background-color: var(--light-cyan);
+  cursor: pointer;
+  -webkit-border-top-right-radius: 50px;
+  -webkit-border-bottom-right-radius: 50px;
+  -moz-border-radius-topright: 50px;
+  -moz-border-radius-bottomright: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}

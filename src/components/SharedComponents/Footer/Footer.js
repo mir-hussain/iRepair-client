@@ -25,11 +25,11 @@ const Footer = () => {
         <p>© {year} iRepair. Privacy Policy</p>
       </div>
       <div className='footer-right-content'>
-        <h1>Subscribe to Newsletter</h1>
+        <h1 className='text-black'>Subscribe to Newsletter</h1>
         <p>Sign up for our e-mail and be the first to know about our special offers!</p>
 
         <div className='footer-input'>
-          <input type='text' />
+          <input type='text' placeholder='Enter your E-mail' />
           <button>Subscribe</button>
         </div>
         <div className='footer-link-container'>

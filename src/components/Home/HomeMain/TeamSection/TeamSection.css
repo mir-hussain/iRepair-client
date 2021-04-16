@@ -1,0 +1,63 @@
+.team-section {
+  width: 100%;
+  background-color: var(--bg-clr);
+}
+
+.member-cards-container {
+  height: 90%;
+  width: 100%;
+  padding: 2rem 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  gap: 20px;
+  justify-content: center;
+}
+
+.member-card {
+  height: 300px;
+  width: 200px;
+  background-color: #fff;
+}
+
+.member-card-image {
+  width: 100%;
+  height: 70%;
+}
+
+.member-card-image > img {
+  display: block;
+  width: 100%;
+}
+
+.member-info {
+  height: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.member-info > h1 {
+  font-size: 1.3rem;
+}
+
+.team-section-title {
+  text-align: center;
+}
+
+.team-section-title > h1 {
+  color: var(--gray);
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.team-section-title > h1 > span {
+  color: var(--off-black);
+}
+
+.team-section-title > p > span {
+  color: var(--off-black);
+}
