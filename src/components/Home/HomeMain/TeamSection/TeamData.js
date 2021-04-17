@@ -19,21 +19,15 @@ const teamData = [
   },
   {
     id: 4,
-    name: "Peter Rivera",
+    name: "Louis Mckenzie ",
     jobTitle: "Repair Technician",
-    image: "https://live.staticflickr.com/65535/50983862633_4c62efd825_o.jpg",
+    image: "https://live.staticflickr.com/65535/50984676432_4df42503dd_o.jpg",
   },
   {
     id: 5,
     name: "Amelia Jonson",
     jobTitle: "Sales Manager",
     image: "https://live.staticflickr.com/65535/50984568041_a2f29047b7_o.jpg",
-  },
-  {
-    id: 6,
-    name: "Louis Mckenzie ",
-    jobTitle: "Marketing Research Analyst",
-    image: "https://live.staticflickr.com/65535/50984676432_4df42503dd_o.jpg",
   },
 ];
 

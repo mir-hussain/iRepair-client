@@ -9,8 +9,8 @@ const ManageServices = () => {
 
   //to delete a selected service
 
-  const deleteservice = (id) => {
-    fetch("https://goshop-server.herokuapp.com/deleteservice/" + id, {
+  const deleteService = (id) => {
+    fetch("http://localhost:5000/deleteService/" + id, {
       method: "DELETE",
     }).then((res) => console.log(res));
   };
@@ -32,7 +32,7 @@ const ManageServices = () => {
       </div>
       <div className='service-table-body'>
         {services.map((service) => (
-          <Service deleteservice={deleteservice} key={service.key} service={service} />
+          <Service deleteService={deleteService} key={service.key} service={service} />
         ))}
       </div>
     </div>
@@ -47,7 +47,7 @@ const Service = (props) => {
     <div className='table-body'>
       <p>{name}</p>
       <p>{price} $ </p>
-      <button className='delete-btn' onClick={() => props.deleteservice(_id)}>
+      <button className='delete-btn' onClick={() => props.deleteService(_id)}>
         Delete
       </button>
     </div>

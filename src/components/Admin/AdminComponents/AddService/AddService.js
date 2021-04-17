@@ -47,26 +47,30 @@ const AddService = () => {
         <div className='service-input-field'>
           <label htmlFor='name'>Add service name</label>
           <input id='name' name='name' placeholder='Enter service name' ref={register({ required: true })} />
+          {errors.name && <span>This field is required</span>}
         </div>
         <div className='service-input-field'>
           <label htmlFor='description'>Add service description</label>
-          <textarea name='description' ref={register({ required: true })} />
+          <textarea name='description' id='description' ref={register({ required: true })} />
+          {errors.description && <span>This field is required</span>}
         </div>
         <div className='service-input-field'>
           <label htmlFor='key'>Add service key</label>
           <input id='key' name='key' placeholder='Enter service name' ref={register({ required: true })} />
+          {errors.key && <span>This field is required</span>}
         </div>
         <div className='service-input-field'>
           <label htmlFor='price'>Add price</label>
           <input id='price' name='price' placeholder='Enter Price' ref={register({ required: true })} />
+          {errors.price && <span>This field is required</span>}
         </div>
         <div className='service-input-field add-image'>
           <label htmlFor='image'>Add service image</label>
-          <input id='image' name='image' type='file' onChange={handleImageUpload} />
+          <input id='image' name='image' type='file' onChange={handleImageUpload} ref={register({ required: true })} />
+          {errors.image && <span>This field is required</span>}
         </div>
 
         {imageURL === null ? <input className='primary-btn' type='submit' value='Save' disabled /> : <input className='primary-btn' type='submit' value='Save' />}
-        {errors.exampleRequired && <span>This field is required</span>}
       </form>
     </div>
   );

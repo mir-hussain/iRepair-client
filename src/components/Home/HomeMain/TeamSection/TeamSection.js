@@ -17,7 +17,7 @@ const TeamSection = () => {
 
       <div className='member-cards-container'>
         {teamData.map((data) => (
-          <Card data={data} />
+          <Card key={data.image} data={data} />
         ))}
       </div>
     </section>

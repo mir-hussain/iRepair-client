@@ -43,7 +43,7 @@
   height: 450px;
   width: 350px;
   background-color: var(--bg-clr);
-  transition: all ease-in-out 500ms;
+  transition: all ease-in-out 300ms;
 }
 
 .service-card:hover {
@@ -72,11 +72,12 @@
   justify-content: space-between;
 }
 
-.service-card-text > h1 {
+.service-card-text > h1 > a {
   font-weight: 600;
   color: var(--off-black);
+  transition: all ease-in-out 200ms;
 }
 
-.service-card-text > h1:hover {
+.service-card-text > h1 > a:hover {
   color: var(--cyan);
 }

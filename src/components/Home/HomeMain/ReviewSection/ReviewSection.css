@@ -1,0 +1,43 @@
+.review-section {
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.review-section > h1 {
+  color: var(--gray);
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.review-section > h1 > span {
+  color: var(--off-black);
+}
+
+.review-cards-container {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.review-card {
+  height: 200px;
+  width: 350px;
+  margin: 1.5rem;
+  background-color: var(--bg-clr);
+  padding: 1rem;
+}
+
+.customer-info {
+  height: 40%;
+  color: var(--gray);
+}
+
+.review {
+  color: var(--off-black);
+  height: 60%;
+  display: flex;
+  align-items: center;
+}
