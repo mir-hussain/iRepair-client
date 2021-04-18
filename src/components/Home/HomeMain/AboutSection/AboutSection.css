@@ -68,3 +68,32 @@
   line-height: 80px;
   color: var(--cyan);
 }
+
+@media only screen and (max-width: 415px) {
+  .about-section {
+    height: 60vh;
+  }
+  .about-image {
+    display: none;
+  }
+  .about-text-area {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .about-text {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .accomplishment {
+    justify-content: space-evenly;
+  }
+
+  .accomplishment > div {
+    margin-right: 0;
+  }
+}

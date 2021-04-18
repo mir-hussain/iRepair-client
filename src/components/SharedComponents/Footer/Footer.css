@@ -1,4 +1,4 @@
-footer {
+.footer-desktop {
   height: 90vh;
   width: 100%;
   background: linear-gradient(#fff, rgba(255, 255, 255, 0)), linear-gradient(-90deg, #fff, #fff, rgba(255, 255, 255, 0)), url(../../../image/footer-bg.jpg);
@@ -6,6 +6,10 @@ footer {
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
+}
+
+.footer-mobile {
+  display: none;
 }
 
 .footer-left-content {
@@ -120,4 +124,18 @@ footer {
   -moz-border-radius-bottomright: 50px;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
+}
+
+@media only screen and (max-width: 415px) {
+  .footer-desktop {
+    display: none;
+  }
+
+  .footer-mobile {
+    display: block;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

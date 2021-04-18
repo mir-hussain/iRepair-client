@@ -47,3 +47,24 @@ nav > ul > li > a {
   font-size: 1em;
   border-radius: 10px;
 }
+
+@media only screen and (max-width: 415px) {
+  nav {
+    position: static;
+    height: 15rem;
+  }
+
+  nav > ul {
+    flex-direction: column;
+  }
+
+  nav > ul > li {
+    margin-top: 2px;
+    cursor: pointer;
+  }
+
+  #logo {
+    margin-right: 0;
+    margin: 0 auto;
+  }
+}

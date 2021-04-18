@@ -53,3 +53,26 @@
 .header-image > img {
   width: 100%;
 }
+
+@media only screen and (max-width: 415px) {
+  .home-header {
+    flex-direction: column-reverse;
+  }
+
+  .header-text-area {
+    height: 50%;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .header-text {
+    height: 100%;
+    width: 100%;
+  }
+
+  .header-image {
+    height: 50%;
+    width: 100%;
+    align-items: center;
+  }
+}
