@@ -16,4 +16,4 @@
 
 2. Team members section is added as an extra section in home page.
 
-_About section is a dummy page, nothing will appear there so please don't waste your time to check the code for errors_
+_About section is a dummy page, nothing will appear there so please don't waste your time to check the code for errors. Thank you._
