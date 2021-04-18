@@ -3,3 +3,7 @@
   width: 100%;
   display: flex;
 }
+
+.service-list {
+  width: 80%;
+}

@@ -76,3 +76,35 @@
   border-bottom: 1px solid var(--bg-clr);
   color: var(--off-black);
 }
+
+.form-header {
+  margin: 0.5rem 0;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--off-black);
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field > input,
+textarea {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--light-gray);
+  border-radius: var(--br-small);
+}
+
+.input-field > input:focus,
+textarea:focus {
+  box-shadow: 0px 0px 10px 3px var(--light-gray);
+}
+
+.input-field > label {
+  color: var(--off-black);
+  margin: 0.5rem 0;
+}

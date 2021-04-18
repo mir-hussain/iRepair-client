@@ -1,16 +1,12 @@
 import React, { useEffect, useState } from "react";
 
-//css
-import "./ManageServices.css";
-
 const ManageServices = () => {
   const [services, setServices] = useState([]);
-  console.log(services);
 
   //to delete a selected service
 
   const deleteService = (id) => {
-    fetch("http://localhost:5000/deleteService/" + id, {
+    fetch("https://irepairserver.herokuapp.com/deleteService/" + id, {
       method: "DELETE",
     }).then((res) => console.log(res));
   };
@@ -18,10 +14,10 @@ const ManageServices = () => {
   //to load data from database
 
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch("https://irepairserver.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => setServices(data));
-  }, []);
+  });
 
   return (
     <div className='service-list'>

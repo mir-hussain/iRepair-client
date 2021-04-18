@@ -9,7 +9,7 @@ const BookingList = () => {
   console.log("this is previous bookings", previousBookings);
 
   useEffect(() => {
-    fetch("http://localhost:5000/bookings?email=" + user.email)
+    fetch("https://irepairserver.herokuapp.com/bookingsByEmail?email=" + user.email)
       .then((res) => res.json())
       .then((data) => setBookings(data));
   }, [user.email]);
@@ -17,7 +17,7 @@ const BookingList = () => {
   useEffect(() => {
     const servicesId = bookings.map((booking) => booking.selectedService.key);
 
-    fetch("http://localhost:5000/servicesByKeys", {
+    fetch("https://irepairserver.herokuapp.com/servicesByKeys", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -33,21 +33,23 @@ const BookingList = () => {
       <div className='table-header'>
         <p>Service name</p>
         <p>price</p>
+        <p>Status</p>
       </div>
 
-      {previousBookings.map((orders) => (
-        <BookingHistory key={orders.key} orders={orders} />
+      {previousBookings.map((bookings) => (
+        <BookingHistory key={bookings.key} bookings={bookings} />
       ))}
     </div>
   );
 };
 
 const BookingHistory = (props) => {
-  const { name, price } = props.orders;
+  const { name, price, status } = props.bookings;
   return (
     <div className='table-body'>
       <p>{name}</p>
-      <p>{price} $ </p>
+      <p>{price} Tk. </p>
+      <p>{status}</p>
     </div>
   );
 };

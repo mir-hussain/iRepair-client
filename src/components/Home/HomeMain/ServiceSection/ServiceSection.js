@@ -10,7 +10,7 @@ const ServiceSection = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/services").then((res) => setServices(res.data));
+    axios.get("https://irepairserver.herokuapp.com/services").then((res) => setServices(res.data));
   }, []);
 
   const handleAddService = (event) => {
@@ -39,21 +39,12 @@ const ServiceSection = () => {
           <Card key={service.key} handleAddService={handleAddService} service={service} />
         ))}
       </div>
-      <button className='primary-btn service-section-btn'>More </button>
     </section>
   );
 };
 
 const Card = ({ service, handleAddService }) => {
   const { name, description, price, imageURL } = service;
-  // const [user, setUser] = useContext(UserContext);
-
-  // const handleAddService = (event) => {
-  //   const serviceName = event.target.innerText;
-  //   const newUser = { ...user };
-  //   newUser.service = serviceName;
-  //   setUser(newUser);
-  // };
   return (
     <div className='service-card'>
       <div className='service-card-image'>

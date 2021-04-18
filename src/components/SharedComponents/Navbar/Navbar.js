@@ -14,7 +14,7 @@ const Navbar = () => {
   const [admins, setAdmins] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/admins").then((res) => setAdmins(res.data));
+    axios.get("https://irepairserver.herokuapp.com/admins").then((res) => setAdmins(res.data));
   }, []);
 
   const emailList = admins.map((admin) => admin.email);
@@ -59,12 +59,9 @@ const Navbar = () => {
         <li>
           <Link to='/about'>About</Link>
         </li>
-        <li>
-          <Link to='/services'>Services</Link>
-        </li>
         {isAdmin && (
           <li>
-            <Link to='/admin?name=admin'>Admin</Link>
+            <Link to='/admin/order-list?name=admin'>Admin</Link>
           </li>
         )}
 
@@ -79,7 +76,9 @@ const Navbar = () => {
           </li>
         ) : (
           <li>
-            <Link to='/login'>Login</Link>
+            <Link id='login-btn' to='/login'>
+              Log in
+            </Link>
           </li>
         )}
       </ul>

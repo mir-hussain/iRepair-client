@@ -36,3 +36,14 @@ nav > ul > li > a {
   margin-right: auto;
   color: var(--off-black);
 }
+
+#logout-btn,
+#login-btn {
+  background-color: var(--light-gray);
+  color: var(--off-black);
+  border: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  font-size: 1em;
+  border-radius: 10px;
+}
